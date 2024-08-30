@@ -1,0 +1,21 @@
+---
+{/* This is now being replaced by a custom social astro component
+  const platform = "github";
+const username = "SnotBoogie1987";
+*/}
+
+import Social from './Social.astro';
+---
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
+
+<footer>
+  <Social platform="insta" username="scottxonnor" />
+  <Social platform="github" username="SnotBoogie1987" />
+  <Social platform="youtube" username="astrodotbuild" />
+</footer>
