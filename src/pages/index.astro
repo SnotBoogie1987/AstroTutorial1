@@ -1,4 +1,6 @@
 ---
+import Navigation from '../components/Navigation.astro';
+import '../styles/global.css';
 const pageTitle = "Home";
 ---
 
@@ -15,9 +17,13 @@ const pageTitle = "Home";
 		{/*These are header navigations links */}
         {/*Unlike many frameworks, Astro uses standard HTML <a> elements to navigate
         between pages (also called routes), with traditional page refreshes */} 
-		 <a href="/">Home</a>
+
+		 {/*}<a href="/">Home</a>
 		 <a href="/about/">About</a>
-		 <a href="/blog/">Blog</a>
+		 <a href="/blog/">Blog</a>*/}
+
+		{/* By adding this custom nav component the above page links are now redundant*/}
+		<Navigation />
 
 		<h1>{pageTitle}</h1>
 	</body>

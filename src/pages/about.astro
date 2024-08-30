@@ -1,4 +1,7 @@
 ---
+import Navigation from '../components/Navigation.astro';
+import '../styles/global.css';
+
 const pageTitle = "About Me";
 
 const identity = {
@@ -28,7 +31,7 @@ const textCase = "uppercase";
 		<title>{pageTitle}</title>
         <style define:vars={{skillColor, fontWeight, textCase}}>
             h1 {
-              color: purple;
+              color: rgb(19, 0, 128);
               font-size: 4rem;
             }
             .skill {
@@ -41,10 +44,14 @@ const textCase = "uppercase";
 	<body>
         {/*These are header navigations links */}
         {/*Unlike many frameworks, Astro uses standard HTML <a> elements to navigate
-        between pages (also called routes), with traditional page refreshes */}
-            <a href="/">Home</a>
-            <a href="/about/">About</a>
-            <a href="/blog/">Blog</a>
+        between pages (also called routes), with traditional page refreshes */} 
+
+		 {/*}<a href="/">Home</a>
+		 <a href="/about/">About</a>
+		 <a href="/blog/">Blog</a>*/}
+
+		{/* By adding this custom nav component the above page links are now redundant*/}
+		<Navigation />
 		
             
                 <h1>{pageTitle}</h1>
