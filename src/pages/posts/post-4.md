@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
+layout: ../../layouts/MarkDownPostLayout.astro
 title: "My Fourth Blog Post"
 description: "This post will show up on its own!"
 image:
