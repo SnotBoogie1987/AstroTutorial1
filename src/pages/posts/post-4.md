@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: My Fourth Blog Post
+title: "My Fourth Blog Post"
 description: "This post will show up on its own!"
 image:
   url: "https://docs.astro.build/default-og-image.png"
